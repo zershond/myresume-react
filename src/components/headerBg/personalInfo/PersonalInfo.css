@@ -1,0 +1,38 @@
+.personal-info-container{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+    color: rgb(39, 39, 38);
+}
+.personal-info-container ul{
+    list-style: none;
+    padding-left: 100px;
+    padding-right: 80px;
+    max-width: 1000px;
+}
+.personal-info-container ul>li {
+    border-bottom: 1px solid;
+    /* color: #fefefe; */
+    overflow: hidden;
+    display: flex;
+}
+
+.personal-info-container ul>li .row{
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    text-align: left;
+    box-sizing: content-box;
+}
+.personal-info-container ul>li .row span{
+    font-weight: bold;
+}
+.personal-info-container ul>li .row .cell{
+    width: 50%;
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+.personal-info-container ul>li .row .cell:first-child {
+    text-align: right;
+}

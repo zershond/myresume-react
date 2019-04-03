@@ -1,0 +1,31 @@
+.header-bg-container{
+    width: 100%;
+    /* height: 500px; */
+    /* position: relative; */
+}
+.header-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/hbg_1.jpg");
+    
+}
+.header-mask{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #888;
+    opacity: 0.7;
+    z-index: 10;
+}
+.header-main-container{
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; */
+    overflow: hidden;
+    display: flex;
+}

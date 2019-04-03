@@ -1,0 +1,19 @@
+.title-container{
+    width: 300px;
+    margin-top: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+.title-container h2{
+    width: 100%;
+    font-size: 50px;
+    color: rgb(79,77,76);
+    /* padding-left: 100px; */
+    margin-bottom: 20px;
+}
+.title-container h4{
+    width: 100%;
+    color: rgb(80,201,153);
+    margin: 0;
+    /* padding-left: 100px; */
+}
