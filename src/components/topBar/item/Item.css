@@ -1,0 +1,101 @@
+a {
+    text-decoration: none;
+    color: #111;
+}
+.item-container{
+    height: 40px;
+    /* width: 40px; */
+    font-size: 22px;
+    float: right;
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-top: 7px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #efefef00;
+}
+.item-container:hover{
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+.item-container .tool-tip{
+    position: absolute;
+    font-size: 10px;
+    color: #111;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid #888; */
+    background-color: #aaa;
+    padding: 7px;
+    z-index: 100;
+    border-radius: 4px;
+    opacity: 0;
+}
+.item-container:hover .tool-tip{
+    -webkit-animation: tool-tip-animate 1s linear 0.4s 1 forwards;
+    -moz-animation: tool-tip-animate 1s linear 0.4s 1 forwards;
+    -o-animation: tool-tip-animate 1s linear 0.4s 1 forwards;
+    animation: tool-tip-animate 1s linear 0.4s 1 forwards;
+}
+.item-container .arrow:before{
+    content: '';
+    display:block;
+    width:0;
+    height:0;
+    border-width:0 7px 7px;
+    border-style:solid;
+    border-color:transparent transparent #aaa;/*透明 透明  黄*/
+    position:absolute;
+    top:32px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+}
+.item-container:hover .arrow:before{
+    -webkit-animation: tool-tip-animate 1s linear 0.4s 1 forwards;
+    -moz-animation: tool-tip-animate 1s linear 0.4s 1 forwards;
+    -o-animation: tool-tip-animate 1s linear 0.4s 1 forwards;
+    animation: tool-tip-animate 1s linear 0.4s 1 forwards;
+}
+.item-container .content{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3px;
+}
+
+@-webkit-keyframes tool-tip-animate{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes tool-tip-animate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes tool-tip-animate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ @keyframes tool-tip-animate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }

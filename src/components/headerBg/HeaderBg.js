@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
+import Http from '../../utils/Http'
 import PersonalInfo from './personalInfo/PersonalInfo';
 import Title from './title/Title';
 import './HeaderBg.css';
 
+const httpInstance = new Http();
 
 export default class HeaderBg extends Component {
-    // constructor() {
-
-    // }
+    constructor(props) {
+      super(props);
+      httpInstance.send('/data-api', {
+        service: 'personal-info',
+        user: 'Caleb'
+      }).then((res) => {
+        console.log(res);
+      })
+    }
 
     render() {
         return (

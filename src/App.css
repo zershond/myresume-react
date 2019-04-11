@@ -1,5 +1,21 @@
+body{
+  /* background-color: #f5f7df; */
+  background-image: url('./assets/labi.jpg');
+  background-repeat: repeat-x;
+  background-position: 0px -35px;
+}
 .App {
   text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  width: 1300px;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px #333;
+  z-index: 10;
 }
 
 .App-logo {

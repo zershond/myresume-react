@@ -1,0 +1,10 @@
+.logo{
+    width: 150px;
+    height: 40px;
+    float: left;
+    background-image: url("../../../assets/myresume-logo-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
